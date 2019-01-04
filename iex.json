@@ -1,0 +1,29 @@
+{
+	"$schema": "https://developer.microsoft.com/en-us/json-schemas/office-js/custom-functions.schema.json",
+  "functions": [
+	{ 
+    "id": "STOCKPRICESTREAM",
+    "name": "STOCKPRICESTREAM",
+    "description": "Streams real time stock price",
+    "helpUrl": "http://www.contoso.com/help",
+    "result": 
+		{
+        "type": "number",
+        "dimensionality": "scalar"
+		},  
+    "parameters": [
+        {
+            "name": "ticker",
+            "description": "stock symbol",
+            "type": "string",
+            "dimensionality": "scalar"
+        }
+    ],
+    "options": 
+		{
+        "stream": true,
+        "cancelable": true
+		}
+	}
+	]
+}
